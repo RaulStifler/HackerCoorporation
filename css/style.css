@@ -17,11 +17,38 @@
 }
 .header h1{
 	font-size: 3rem;
-	font-family: Title-Hack;
+	font-family: Title-HackItalic;
 }
 .header .logo img{
-	padding: .3rem;
+	padding: .1rem;
 	max-width: 50%;
+}
+.logo{
+	cursor: pointer;
+}
+.logo:hover{
+	background: rgba(0,0,0,0.2);
+}
+.main-menu ul{
+	justify-content: space-around;
+	background: #305D83;
+	list-style: none;
+	display: flex;
+}
+.main-menu li{
+	border-right: thin solid #fff;
+	flex: auto;
+}
+.main-menu li a{
+	color: #fff;
+	font-weight: bold;
+	line-height: 2.5;
+	text-decoration: none;
+	display: block;
+	border-bottom: .3rem solid #305D83;
+}
+.main-menu a:hover{
+	border-bottom: .3rem solid #f00;
 }
 
 
@@ -37,19 +64,30 @@ Estilos Generales +1200px
 @media screen and (max-width: 64em) {
 	.header{ background: green; }
 	.header h1{	font-size: 2rem; }
+	.header .logo img{ max-width: 75%; }
 }
 @media screen and (max-width: 48em) {
 	.header{ background: blue; }
-	.header .logo img{ max-width: 75%; }
+	.main-menu ul{ display: block; }
+	.main-menu li a{
+		border-bottom: thin solid #fff;
+		font-size: 1rem;
+		line-height: 4;
+	}
+	.main-menu li a:hover{
+		border-bottom: thin solid #fff;
+		background: rgba(0,0,0,.3);
+	}
+
 }
 @media screen and (max-width: 37.5em) {
 	.header{ background: cyan; }
 	.header h1{	font-size: 1.5rem; }
+	.header .logo img{ max-width: 100%; }
 }
 @media screen and (max-width: 30em) {
 	.header{ background: magenta; }
 	.header h1{	font-size: 1rem; }
-	.header .logo img{ max-width: 100%; }
 }
 @media screen and (max-width: 20em) {
 	.header{ background: yellow; }
