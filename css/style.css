@@ -1,0 +1,56 @@
+/*Incliye los estilos independientes para cada proyecto*/
+@font-face {
+	font-family: "Title-HackItalic";
+	src: url('../res/font/cyberdynehalfital.ttf');
+}
+@font-face {
+	font-family: "Title-Hack";
+	src: url('../res/font/cyberdynehalf.ttf');
+}
+.header{
+	font-size: 0;
+	background: steelblue;
+}
+.item{
+	display: inline-block;
+	vertical-align: middle;
+}
+.header h1{
+	font-size: 3rem;
+	font-family: Title-Hack;
+}
+.header .logo img{
+	padding: .3rem;
+	max-width: 50%;
+}
+
+
+/*
+Estilos Generales +1200px
+-Breakpoints para Responsive Design Desktop First:
+1200px	1024px	768px	600px	480px	320px
+75em	64em	48em	37.5em	30em	20em
+*/
+@media screen and (max-width: 75em) {
+	.header{ background: red; }
+}
+@media screen and (max-width: 64em) {
+	.header{ background: green; }
+	.header h1{	font-size: 2rem; }
+}
+@media screen and (max-width: 48em) {
+	.header{ background: blue; }
+	.header .logo img{ max-width: 75%; }
+}
+@media screen and (max-width: 37.5em) {
+	.header{ background: cyan; }
+	.header h1{	font-size: 1.5rem; }
+}
+@media screen and (max-width: 30em) {
+	.header{ background: magenta; }
+	.header h1{	font-size: 1rem; }
+	.header .logo img{ max-width: 100%; }
+}
+@media screen and (max-width: 20em) {
+	.header{ background: yellow; }
+}
